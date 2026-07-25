@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-olive: var(--olive);
+  --color-stone: var(--stone);
+  --color-sand: var(--sand);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Core dark luxury palette */
+  --background: #111111;
+  --foreground: #f9f9f7;
+
+  --card: #1a1a19;
+  --card-foreground: #f9f9f7;
+
+  --popover: #1a1a19;
+  --popover-foreground: #f9f9f7;
+
+  /* Olive brand accent */
+  --primary: #6b8241;
+  --primary-foreground: #f9f9f7;
+
+  --secondary: #2b2b2b;
+  --secondary-foreground: #f9f9f7;
+
+  --muted: #2b2b2b;
+  --muted-foreground: #b7b1a1;
+
+  --accent: #d7c8aa;
+  --accent-foreground: #111111;
+
+  --destructive: #b4432f;
+
+  --border: rgba(249, 249, 247, 0.12);
+  --input: rgba(249, 249, 247, 0.16);
+  --ring: #6b8241;
+
+  /* Named brand tokens */
+  --olive: #556b2f;
+  --stone: #b7b1a1;
+  --sand: #d7c8aa;
+
+  --radius: 0.25rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--sand);
+    color: var(--background);
+  }
+}
