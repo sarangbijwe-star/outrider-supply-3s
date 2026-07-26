@@ -172,7 +172,7 @@ export function NewArrivals() {
       <div className="mx-auto max-w-[1600px] px-5 py-24 md:px-10 md:py-32">
         <div className="mb-12 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
           <Reveal>
-            <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-primary">
+            <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-brand">
               02 — Just Landed
             </p>
             <h2 className="max-w-2xl text-balance text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">

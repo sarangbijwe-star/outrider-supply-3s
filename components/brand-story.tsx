@@ -23,7 +23,7 @@ export function BrandStory() {
           <motion.div style={{ y }} className="absolute inset-0 h-[116%]">
             <Image
               src="/images/brand-story.png"
-              alt="Male model in a heavyweight tee and utility work shirt against concrete"
+              alt="Male model wearing a forest-green graphic tee with a mountain back print beside an alpine lake"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -33,7 +33,7 @@ export function BrandStory() {
 
         <div className="lg:pl-6">
           <Reveal>
-            <p className="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-primary">
+            <p className="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-brand">
               03 — Our Philosophy
             </p>
           </Reveal>

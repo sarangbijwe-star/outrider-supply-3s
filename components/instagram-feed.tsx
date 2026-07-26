@@ -5,12 +5,12 @@ import { AtSign, Camera } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
 const FEED = [
-  { src: '/images/ig-1.png', alt: 'Outdoor streetwear detail on city street', tall: false },
-  { src: '/images/ig-6.png', alt: 'Dramatic mountain peak in fog', tall: true },
-  { src: '/images/ig-2.png', alt: 'Model against rugged rock', tall: false },
-  { src: '/images/ig-3.png', alt: 'Flat lay of folded streetwear', tall: false },
-  { src: '/images/ig-5.png', alt: 'Model walking through foggy urban environment', tall: true },
-  { src: '/images/ig-4.png', alt: 'Close detail of technical jacket fabric', tall: false },
+  { src: '/images/ig-1.png', alt: 'Male model in a graphic tee on a mountain overlook', tall: false },
+  { src: '/images/ig-6.png', alt: 'Dramatic misty mountain peaks with a trail', tall: true },
+  { src: '/images/ig-2.png', alt: 'Back print graphic tee beside an alpine lake', tall: false },
+  { src: '/images/ig-3.png', alt: 'Flat lay of folded graphic tees and cargo pants', tall: false },
+  { src: '/images/ig-5.png', alt: 'Male model beside a motorcycle on a desert road', tall: true },
+  { src: '/images/ig-4.png', alt: 'Close detail of a graphic tee chest print', tall: false },
 ]
 
 export function InstagramFeed() {
@@ -18,7 +18,7 @@ export function InstagramFeed() {
     <section className="border-t border-border">
       <div className="mx-auto max-w-[1600px] px-5 py-24 md:px-10 md:py-32">
         <Reveal className="mb-12 flex flex-col items-center gap-4 text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-brand">
             06 — Community
           </p>
           <h2 className="text-balance text-4xl font-semibold tracking-tight md:text-6xl">
