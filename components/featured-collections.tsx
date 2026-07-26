@@ -20,9 +20,9 @@ const COLLECTIONS = [
     ratio: 'aspect-[3/4]',
   },
   {
-    name: 'Hoodies',
-    count: '16 Pieces',
-    image: '/images/collection-hoodies.png',
+    name: 'Utility Pants',
+    count: '14 Pieces',
+    image: '/images/collection-utility.png',
     span: 'md:col-span-1',
     ratio: 'aspect-[3/4]',
   },

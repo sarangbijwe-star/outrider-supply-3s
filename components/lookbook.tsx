@@ -9,25 +9,25 @@ import { Reveal } from '@/components/reveal'
 const SHOTS = [
   {
     src: '/images/lookbook-1.png',
-    alt: 'Male model in a graphic tee and utility overshirt on a forest trail',
+    alt: 'Male model in a forest-green graphic tee on a pine forest trail',
     label: 'The Forest Edit',
     className: 'md:col-span-5 md:row-span-2 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-2.png',
-    alt: 'Two male models in streetwear against industrial concrete',
-    label: 'Concrete & Steel',
+    alt: 'Two male models in graphic tees beside a camper van on the coast',
+    label: 'Coastal Road Trip',
     className: 'md:col-span-7 aspect-[16/10]',
   },
   {
     src: '/images/lookbook-4.png',
-    alt: 'Male model in a hoodie seated in a concrete coffee shop',
-    label: 'City Mornings',
+    alt: 'Male model in a graphic tee leaning on a vintage 4x4 truck',
+    label: 'Overland',
     className: 'md:col-span-3 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-3.png',
-    alt: 'Male model beside a vintage motorcycle on a desert road',
+    alt: 'Male model beside a scrambler motorcycle on a desert highway',
     label: 'On the Road',
     className: 'md:col-span-4 aspect-[3/4]',
   },

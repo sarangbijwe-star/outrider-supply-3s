@@ -11,19 +11,36 @@ export default function Icon() {
           width: '100%',
           height: '100%',
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           background: '#111111',
-          color: '#F9F9F7',
-          fontSize: 15,
-          fontWeight: 700,
-          letterSpacing: '-0.02em',
-          fontFamily: 'monospace',
-          border: '2px solid #556B2F',
-          borderRadius: 4,
+          fontFamily: 'sans-serif',
         }}
       >
-        OR
+        {/* Orange peak accent */}
+        <div
+          style={{
+            width: 0,
+            height: 0,
+            borderLeft: '5px solid transparent',
+            borderRight: '5px solid transparent',
+            borderBottom: '8px solid #C15A2B',
+            marginBottom: 1,
+          }}
+        />
+        <div
+          style={{
+            display: 'flex',
+            color: '#F9F9F7',
+            fontSize: 13,
+            fontWeight: 700,
+            letterSpacing: 0,
+            lineHeight: 1,
+          }}
+        >
+          ORS
+        </div>
       </div>
     ),
     size,
