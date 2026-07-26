@@ -9,27 +9,31 @@ const COLLECTIONS = [
     name: 'Graphic Tees',
     count: '32 Pieces',
     image: '/images/collection-graphic-tees.png',
+    alt: 'OutRider Supply graphic tees worn across outdoor lifestyle settings',
     span: 'md:col-span-2',
     ratio: 'aspect-[16/10]',
   },
   {
-    name: 'Cargo Collection',
+    name: 'Chest Prints',
     count: '18 Pieces',
     image: '/images/collection-cargo.png',
+    alt: 'Wayfarer chest-print tee in charcoal',
     span: 'md:col-span-1',
     ratio: 'aspect-[3/4]',
   },
   {
-    name: 'Utility Pants',
+    name: 'Badge Series',
     count: '14 Pieces',
     image: '/images/collection-utility.png',
+    alt: 'Badge chest tee in dark grey',
     span: 'md:col-span-1',
     ratio: 'aspect-[3/4]',
   },
   {
-    name: 'Denim',
+    name: 'Back Prints',
     count: '21 Pieces',
     image: '/images/collection-denim.png',
+    alt: 'OutRider Supply back-print tees worn on the road',
     span: 'md:col-span-2',
     ratio: 'aspect-[16/10]',
   },
@@ -72,7 +76,7 @@ export function FeaturedCollections() {
             <div className={`relative ${c.ratio} w-full overflow-hidden`}>
               <Image
                 src={c.image || '/placeholder.svg'}
-                alt={`${c.name} collection`}
+                alt={c.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 66vw"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"

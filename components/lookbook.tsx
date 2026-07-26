@@ -9,26 +9,26 @@ import { Reveal } from '@/components/reveal'
 const SHOTS = [
   {
     src: '/images/lookbook-1.png',
-    alt: 'Male model in a forest-green graphic tee on a pine forest trail',
-    label: 'The Forest Edit',
+    alt: 'Model in a Peaks graphic tee beside an off-road expedition truck',
+    label: 'The Peaks Edit',
     className: 'md:col-span-5 md:row-span-2 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-2.png',
-    alt: 'Two male models in graphic tees beside a camper van on the coast',
+    alt: 'Coastal road trip with OutRider Supply graphic tees',
     label: 'Coastal Road Trip',
     className: 'md:col-span-7 aspect-[16/10]',
   },
   {
     src: '/images/lookbook-4.png',
-    alt: 'Male model in a graphic tee leaning on a vintage 4x4 truck',
-    label: 'Overland',
+    alt: 'Roam More back-print tee worn on the road',
+    label: 'Roam More',
     className: 'md:col-span-3 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-3.png',
-    alt: 'Male model beside a scrambler motorcycle on a desert highway',
-    label: 'On the Road',
+    alt: 'Wilderness back-print tee against the treeline',
+    label: 'Into the Wilderness',
     className: 'md:col-span-4 aspect-[3/4]',
   },
 ]

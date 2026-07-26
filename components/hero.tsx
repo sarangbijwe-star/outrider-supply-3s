@@ -24,10 +24,10 @@ export function Hero() {
       <motion.div style={{ y }} className="absolute inset-0 h-[120%]">
         <Image
           src="/images/hero.png"
-          alt="Male model in a graphic tee and cargo pants standing in a misty mountain valley"
+          alt="Model wearing the Explore Further forest-green graphic tee beside an alpine lake"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-[center_20%] md:object-[70%_20%]"
         />
       </motion.div>
       <motion.div

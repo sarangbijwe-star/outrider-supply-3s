@@ -5,12 +5,12 @@ import { AtSign, Camera } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
 const FEED = [
-  { src: '/images/ig-1.png', alt: 'Male model in a graphic tee on a mountain overlook', tall: false },
-  { src: '/images/ig-6.png', alt: 'Dramatic misty mountain peaks with a trail', tall: true },
-  { src: '/images/ig-2.png', alt: 'Back print graphic tee beside an alpine lake', tall: false },
-  { src: '/images/ig-3.png', alt: 'Flat lay of folded graphic tees and cargo pants', tall: false },
-  { src: '/images/ig-5.png', alt: 'Male model beside a motorcycle on a desert road', tall: true },
-  { src: '/images/ig-4.png', alt: 'Close detail of a graphic tee chest print', tall: false },
+  { src: '/images/ig-1.png', alt: 'OutRider Supply model in a graphic tee outdoors', tall: false },
+  { src: '/images/ig-6.png', alt: 'Wave & Wheels graphic tee lifestyle', tall: true },
+  { src: '/images/ig-2.png', alt: 'Surf Line graphic tee by the coast', tall: false },
+  { src: '/images/ig-3.png', alt: 'Skate Freedom graphic tee', tall: false },
+  { src: '/images/ig-5.png', alt: 'Coastal road trip with OutRider Supply tees', tall: true },
+  { src: '/images/ig-4.png', alt: '4x4 Expedition graphic tee', tall: false },
 ]
 
 export function InstagramFeed() {

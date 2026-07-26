@@ -8,23 +8,23 @@ const ARTICLES = [
   {
     image: '/images/journal-1.png',
     category: 'Field Notes',
-    title: 'Three days above the treeline in the Dolomites',
+    title: 'Chasing switchbacks: an overland weekend off the grid',
     date: 'Oct 2025',
-    alt: 'Misty alpine mountain trail at dawn',
+    alt: '4x4 expedition graphic tee lifestyle shot',
   },
   {
     image: '/images/journal-2.png',
     category: 'On the Road',
-    title: 'A slow ride through the high desert at golden hour',
+    title: 'A coastal road trip in nothing but graphic tees',
     date: 'Sep 2025',
-    alt: 'Vintage motorcycle on an empty desert highway',
+    alt: 'Coastal road trip with OutRider Supply tees',
   },
   {
     image: '/images/journal-3.png',
     category: 'Craft',
     title: 'Inside the garment-dyeing that gives our tees their fade',
     date: 'Aug 2025',
-    alt: 'Minimalist campsite tent beside an alpine lake',
+    alt: 'Skate Freedom graphic tee lifestyle shot',
   },
 ]
 

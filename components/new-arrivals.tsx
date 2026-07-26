@@ -19,7 +19,7 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'Wilderness Graphic Tee',
+    name: 'Surf Line Graphic Tee',
     category: 'Graphic Tees',
     price: '$58',
     image: '/images/product-1.png',
@@ -32,7 +32,7 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 2,
-    name: 'Roam More Graphic Tee',
+    name: 'Skate Freedom Tee',
     category: 'Graphic Tees',
     price: '$58',
     image: '/images/product-2.png',
@@ -45,21 +45,21 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 3,
-    name: 'Ripstop Cargo Pant',
-    category: 'Cargo',
-    price: '$128',
+    name: 'Wave & Wheels Tee',
+    category: 'Graphic Tees',
+    price: '$58',
     image: '/images/product-3.png',
     swatches: [
-      { name: 'Olive', hex: '#556B2F' },
+      { name: 'Stone', hex: '#B7B1A1' },
       { name: 'Charcoal', hex: '#2B2B2B' },
       { name: 'Sand', hex: '#D7C8AA' },
     ],
   },
   {
     id: 4,
-    name: 'Overland Heavy Hoodie',
-    category: 'Hoodies',
-    price: '$118',
+    name: '4x4 Expedition Tee',
+    category: 'Graphic Tees',
+    price: '$62',
     image: '/images/product-4.png',
     swatches: [
       { name: 'Charcoal', hex: '#2B2B2B' },
