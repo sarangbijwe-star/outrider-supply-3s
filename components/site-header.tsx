@@ -40,11 +40,13 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 md:h-20 md:px-10">
         {/* Logo */}
-        <a
-          href="#top"
-          className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-foreground md:text-base"
-        >
-          OutRider<span className="text-primary">.</span>
+        <a href="#top" className="flex items-center gap-2.5">
+          <span className="flex h-7 w-7 items-center justify-center rounded-sm border border-foreground/40 font-mono text-[10px] font-bold tracking-[0.02em] text-foreground">
+            OR
+          </span>
+          <span className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-foreground md:text-base">
+            OutRider<span className="text-primary">.</span>
+          </span>
         </a>
 
         {/* Center nav */}
@@ -105,8 +107,13 @@ export function SiteHeader() {
             className="fixed inset-0 z-50 flex flex-col bg-background lg:hidden"
           >
             <div className="flex h-16 items-center justify-between px-5">
-              <span className="font-mono text-sm font-bold uppercase tracking-[0.25em]">
-                OutRider<span className="text-primary">.</span>
+              <span className="flex items-center gap-2.5">
+                <span className="flex h-7 w-7 items-center justify-center rounded-sm border border-foreground/40 font-mono text-[10px] font-bold tracking-[0.02em] text-foreground">
+                  OR
+                </span>
+                <span className="font-mono text-sm font-bold uppercase tracking-[0.25em]">
+                  OutRider<span className="text-primary">.</span>
+                </span>
               </span>
               <button
                 aria-label="Close menu"

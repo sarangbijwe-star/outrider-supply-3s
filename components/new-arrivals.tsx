@@ -19,23 +19,11 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'Ridgeline Anorak',
-    category: 'Outerwear',
-    price: '$298',
+    name: 'Coordinates Graphic Tee',
+    category: 'Graphic Tees',
+    price: '$68',
     image: '/images/product-1.png',
     tag: 'New',
-    swatches: [
-      { name: 'Olive', hex: '#556B2F' },
-      { name: 'Charcoal', hex: '#2B2B2B' },
-      { name: 'Sand', hex: '#D7C8AA' },
-    ],
-  },
-  {
-    id: 2,
-    name: 'Basecamp Hoodie',
-    category: 'Hoodies',
-    price: '$168',
-    image: '/images/product-2.png',
     swatches: [
       { name: 'Sand', hex: '#D7C8AA' },
       { name: 'Stone', hex: '#B7B1A1' },
@@ -43,25 +31,37 @@ const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 3,
-    name: 'Traverse Cargo Pant',
-    category: 'Bottoms',
-    price: '$210',
-    image: '/images/product-3.png',
+    id: 2,
+    name: 'Ripstop Cargo Pant',
+    category: 'Cargo',
+    price: '$148',
+    image: '/images/product-2.png',
     tag: 'New',
     swatches: [
-      { name: 'Charcoal', hex: '#2B2B2B' },
       { name: 'Olive', hex: '#556B2F' },
+      { name: 'Charcoal', hex: '#2B2B2B' },
+      { name: 'Sand', hex: '#D7C8AA' },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Drifter Straight Denim',
+    category: 'Denim',
+    price: '$158',
+    image: '/images/product-3.png',
+    swatches: [
+      { name: 'Indigo', hex: '#2B2B2B' },
+      { name: 'Stone', hex: '#B7B1A1' },
     ],
   },
   {
     id: 4,
-    name: 'Summit Fleece',
-    category: 'Knitwear',
-    price: '$184',
+    name: 'Basecamp Heavy Hoodie',
+    category: 'Hoodies',
+    price: '$138',
     image: '/images/product-4.png',
     swatches: [
-      { name: 'Stone', hex: '#B7B1A1' },
+      { name: 'Charcoal', hex: '#2B2B2B' },
       { name: 'Sand', hex: '#D7C8AA' },
       { name: 'Olive', hex: '#556B2F' },
     ],
@@ -180,8 +180,8 @@ export function NewArrivals() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Engineered fabrics and considered details. Built to move with you,
-              wherever the day takes you.
+              Heavyweight cottons, washed graphics, and utility details. Wear it
+              from the city to the trail and back.
             </p>
           </Reveal>
         </div>

@@ -23,7 +23,7 @@ export function BrandStory() {
           <motion.div style={{ y }} className="absolute inset-0 h-[116%]">
             <Image
               src="/images/brand-story.png"
-              alt="Detail of premium technical outdoor streetwear fabric"
+              alt="Male model in a heavyweight tee and utility work shirt against concrete"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -39,15 +39,15 @@ export function BrandStory() {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
-              Built for the space between the city and the wild.
+              Made for movement. From the city to the trail.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-              OutRider Supply began with a simple belief — that the clothing you
-              wear should never hold you back. We blend technical utility with
-              considered design, creating pieces that move effortlessly from
-              morning commutes to mountain trails.
+              OutRider Supply is streetwear with outdoor DNA. We build
+              heavyweight essentials, washed graphics, and utility staples with
+              a craftsman&apos;s attention to detail — timeless design made for
+              freedom, movement, and modern exploration.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
@@ -57,7 +57,7 @@ export function BrandStory() {
                   100%
                 </p>
                 <p className="mt-2 text-xs uppercase tracking-[0.15em] text-muted-foreground">
-                  Responsibly sourced materials
+                  Garment-dyed premium cotton
                 </p>
               </div>
               <div>
@@ -65,7 +65,7 @@ export function BrandStory() {
                   12yr
                 </p>
                 <p className="mt-2 text-xs uppercase tracking-[0.15em] text-muted-foreground">
-                  Of field-tested craft
+                  Of streetwear craftsmanship
                 </p>
               </div>
             </div>

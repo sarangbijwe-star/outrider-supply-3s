@@ -9,26 +9,26 @@ import { Reveal } from '@/components/reveal'
 const SHOTS = [
   {
     src: '/images/lookbook-1.png',
-    alt: 'Model in premium streetwear walking through a foggy pine forest',
+    alt: 'Male model in a graphic tee and utility overshirt on a forest trail',
     label: 'The Forest Edit',
     className: 'md:col-span-5 md:row-span-2 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-2.png',
-    alt: 'Two models against a raw concrete urban wall',
-    label: 'Concrete & Canvas',
+    alt: 'Two male models in streetwear against industrial concrete',
+    label: 'Concrete & Steel',
     className: 'md:col-span-7 aspect-[16/10]',
   },
   {
     src: '/images/lookbook-4.png',
-    alt: 'Detail crop of technical outerwear with utility straps',
-    label: 'Utility in Focus',
+    alt: 'Male model in a hoodie seated in a concrete coffee shop',
+    label: 'City Mornings',
     className: 'md:col-span-3 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-3.png',
-    alt: 'Model seated on rocky mountain terrain',
-    label: 'High Country',
+    alt: 'Male model beside a vintage motorcycle on a desert road',
+    label: 'On the Road',
     className: 'md:col-span-4 aspect-[3/4]',
   },
 ]

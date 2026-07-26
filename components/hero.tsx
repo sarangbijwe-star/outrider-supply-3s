@@ -24,7 +24,7 @@ export function Hero() {
       <motion.div style={{ y }} className="absolute inset-0 h-[120%]">
         <Image
           src="/images/hero.png"
-          alt="A lone figure in premium outdoor streetwear on a misty mountain ridge at dawn"
+          alt="Male model in a graphic tee, utility overshirt, and cargo pants in a natural outdoor setting"
           fill
           priority
           className="object-cover"
@@ -43,7 +43,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 font-mono text-xs uppercase tracking-[0.35em] text-sand"
         >
-          Autumn / Winter Collection
+          Fall Collection — Utility & Graphics
         </motion.p>
 
         <h1 className="max-w-5xl text-balance text-[18vw] font-semibold leading-[0.85] tracking-tight text-foreground md:text-[13vw] lg:text-[11rem]">
@@ -72,8 +72,8 @@ export function Hero() {
           className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
         >
           <p className="max-w-md text-pretty text-base leading-relaxed text-stone md:text-lg">
-            Premium outdoor streetwear built for everyday exploration — from
-            city streets to mountain trails.
+            Premium streetwear with outdoor DNA — graphic tees, cargo, and
+            heavyweight essentials made for the modern explorer.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a

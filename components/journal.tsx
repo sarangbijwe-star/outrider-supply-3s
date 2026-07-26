@@ -22,7 +22,7 @@ const ARTICLES = [
   {
     image: '/images/journal-3.png',
     category: 'Craft',
-    title: 'How we engineer weather-ready fabric that breathes',
+    title: 'Inside the garment-dyeing that gives our tees their fade',
     date: 'Aug 2025',
     alt: 'Minimalist campsite tent beside an alpine lake',
   },
