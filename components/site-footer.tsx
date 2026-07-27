@@ -1,7 +1,9 @@
+import { OutriderLogo } from '@/components/ors-logo'
+
 const COLUMNS = [
   {
     title: 'Shop',
-    links: ['New Arrivals', 'Outerwear', 'Hoodies', 'T-Shirts', 'Accessories'],
+    links: ['Graphic Tees', 'Cargo Pants', 'Denim', 'Utility Pants', 'Overshirts'],
   },
   {
     title: 'Company',
@@ -27,11 +29,8 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-10 md:grid-cols-6 md:gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-3">
-            <a
-              href="#top"
-              className="font-mono text-lg font-bold uppercase tracking-[0.25em]"
-            >
-              OutRider<span className="text-primary">.</span>
+            <a href="#top" aria-label="OutRider Supply home">
+              <OutriderLogo />
             </a>
             <p className="mt-6 max-w-sm text-pretty text-sm leading-relaxed text-muted-foreground">
               Premium outdoor-inspired streetwear built for exploration — from

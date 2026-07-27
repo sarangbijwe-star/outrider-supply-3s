@@ -19,51 +19,52 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'Ridgeline Anorak',
-    category: 'Outerwear',
-    price: '$298',
+    name: 'Surf Line Graphic Tee',
+    category: 'Graphic Tees',
+    price: '$58',
     image: '/images/product-1.png',
     tag: 'New',
     swatches: [
-      { name: 'Olive', hex: '#556B2F' },
-      { name: 'Charcoal', hex: '#2B2B2B' },
       { name: 'Sand', hex: '#D7C8AA' },
-    ],
-  },
-  {
-    id: 2,
-    name: 'Basecamp Hoodie',
-    category: 'Hoodies',
-    price: '$168',
-    image: '/images/product-2.png',
-    swatches: [
-      { name: 'Sand', hex: '#D7C8AA' },
-      { name: 'Stone', hex: '#B7B1A1' },
+      { name: 'Forest Green', hex: '#556B2F' },
       { name: 'Black', hex: '#111111' },
     ],
   },
   {
-    id: 3,
-    name: 'Traverse Cargo Pant',
-    category: 'Bottoms',
-    price: '$210',
-    image: '/images/product-3.png',
+    id: 2,
+    name: 'Skate Freedom Tee',
+    category: 'Graphic Tees',
+    price: '$58',
+    image: '/images/product-2.png',
     tag: 'New',
     swatches: [
+      { name: 'Off White', hex: '#EDE9DE' },
       { name: 'Charcoal', hex: '#2B2B2B' },
-      { name: 'Olive', hex: '#556B2F' },
+      { name: 'Sand', hex: '#D7C8AA' },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Wave & Wheels Tee',
+    category: 'Graphic Tees',
+    price: '$58',
+    image: '/images/product-3.png',
+    swatches: [
+      { name: 'Stone', hex: '#B7B1A1' },
+      { name: 'Charcoal', hex: '#2B2B2B' },
+      { name: 'Sand', hex: '#D7C8AA' },
     ],
   },
   {
     id: 4,
-    name: 'Summit Fleece',
-    category: 'Knitwear',
-    price: '$184',
+    name: '4x4 Expedition Tee',
+    category: 'Graphic Tees',
+    price: '$62',
     image: '/images/product-4.png',
     swatches: [
-      { name: 'Stone', hex: '#B7B1A1' },
+      { name: 'Charcoal', hex: '#2B2B2B' },
       { name: 'Sand', hex: '#D7C8AA' },
-      { name: 'Olive', hex: '#556B2F' },
+      { name: 'Forest Green', hex: '#556B2F' },
     ],
   },
 ]
@@ -171,7 +172,7 @@ export function NewArrivals() {
       <div className="mx-auto max-w-[1600px] px-5 py-24 md:px-10 md:py-32">
         <div className="mb-12 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
           <Reveal>
-            <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-primary">
+            <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-brand">
               02 — Just Landed
             </p>
             <h2 className="max-w-2xl text-balance text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
@@ -180,8 +181,8 @@ export function NewArrivals() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Engineered fabrics and considered details. Built to move with you,
-              wherever the day takes you.
+              Heavyweight cottons, washed graphics, and utility details. Wear it
+              from the city to the trail and back.
             </p>
           </Reveal>
         </div>

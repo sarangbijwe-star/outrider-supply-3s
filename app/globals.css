@@ -27,6 +27,7 @@
   --color-olive: var(--olive);
   --color-stone: var(--stone);
   --color-sand: var(--sand);
+  --color-brand: var(--brand);
 
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
@@ -74,6 +75,8 @@
   --olive: #556b2f;
   --stone: #b7b1a1;
   --sand: #d7c8aa;
+  /* OutRider Supply signature burnt-orange accent */
+  --brand: #c15a2b;
 
   --radius: 0.25rem;
 }

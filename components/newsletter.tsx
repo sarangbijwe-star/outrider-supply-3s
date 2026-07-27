@@ -18,7 +18,7 @@ export function Newsletter() {
     <section className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-4xl px-5 py-24 text-center md:px-10 md:py-36">
         <Reveal>
-          <p className="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-primary">
+          <p className="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-brand">
             07 — Join the Expedition
           </p>
         </Reveal>

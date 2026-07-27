@@ -24,29 +24,30 @@ export function Hero() {
       <motion.div style={{ y }} className="absolute inset-0 h-[120%]">
         <Image
           src="/images/hero.png"
-          alt="A lone figure in premium outdoor streetwear on a misty mountain ridge at dawn"
+          alt="Model wearing the Explore Further forest-green graphic tee beside an alpine lake"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-[center_20%] md:object-[70%_20%]"
         />
       </motion.div>
       <motion.div
         style={{ opacity: overlay }}
-        className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background"
+        className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-background/10"
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full max-w-[1600px] flex-col justify-end px-5 pb-16 md:px-10 md:pb-24">
+      <div className="relative z-10 mx-auto flex h-full max-w-[1600px] flex-col justify-end px-5 pb-16 md:px-10 md:pb-24 md:pr-[42%]">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 font-mono text-xs uppercase tracking-[0.35em] text-sand"
         >
-          Autumn / Winter Collection
+          Fall Collection — Utility & Graphics
         </motion.p>
 
-        <h1 className="max-w-5xl text-balance text-[18vw] font-semibold leading-[0.85] tracking-tight text-foreground md:text-[13vw] lg:text-[11rem]">
+        <h1 className="max-w-5xl text-balance text-[16vw] font-semibold leading-[0.85] tracking-tight text-foreground md:text-[10vw] lg:text-[9rem]">
           {'Beyond Limits.'.split(' ').map((word, i) => (
             <span key={word} className="block overflow-hidden">
               <motion.span
@@ -72,8 +73,8 @@ export function Hero() {
           className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
         >
           <p className="max-w-md text-pretty text-base leading-relaxed text-stone md:text-lg">
-            Premium outdoor streetwear built for everyday exploration — from
-            city streets to mountain trails.
+            Premium streetwear with outdoor DNA — graphic tees, cargo, and
+            heavyweight essentials made for the modern explorer.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a

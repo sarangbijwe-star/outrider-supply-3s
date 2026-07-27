@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { Heart, Menu, Search, ShoppingBag, X } from 'lucide-react'
+import { OutriderLogo } from '@/components/ors-logo'
 
 const NAV_LINKS = [
   { label: 'Collections', href: '#collections' },
@@ -40,11 +41,8 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 md:h-20 md:px-10">
         {/* Logo */}
-        <a
-          href="#top"
-          className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-foreground md:text-base"
-        >
-          OutRider<span className="text-primary">.</span>
+        <a href="#top" aria-label="OutRider Supply home">
+          <OutriderLogo />
         </a>
 
         {/* Center nav */}
@@ -80,7 +78,7 @@ export function SiteHeader() {
             className="relative text-foreground/90 transition-colors hover:text-sand"
           >
             <ShoppingBag className="h-[18px] w-[18px]" strokeWidth={1.5} />
-            <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[9px] font-semibold text-primary-foreground">
+            <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-brand text-[9px] font-semibold text-background">
               2
             </span>
           </button>
@@ -105,9 +103,7 @@ export function SiteHeader() {
             className="fixed inset-0 z-50 flex flex-col bg-background lg:hidden"
           >
             <div className="flex h-16 items-center justify-between px-5">
-              <span className="font-mono text-sm font-bold uppercase tracking-[0.25em]">
-                OutRider<span className="text-primary">.</span>
-              </span>
+              <OutriderLogo compact />
               <button
                 aria-label="Close menu"
                 onClick={() => setMenuOpen(false)}

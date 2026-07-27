@@ -8,23 +8,23 @@ const ARTICLES = [
   {
     image: '/images/journal-1.png',
     category: 'Field Notes',
-    title: 'Three days above the treeline in the Dolomites',
+    title: 'Chasing switchbacks: an overland weekend off the grid',
     date: 'Oct 2025',
-    alt: 'Misty alpine mountain trail at dawn',
+    alt: '4x4 expedition graphic tee lifestyle shot',
   },
   {
     image: '/images/journal-2.png',
     category: 'On the Road',
-    title: 'A slow ride through the high desert at golden hour',
+    title: 'A coastal road trip in nothing but graphic tees',
     date: 'Sep 2025',
-    alt: 'Vintage motorcycle on an empty desert highway',
+    alt: 'Coastal road trip with OutRider Supply tees',
   },
   {
     image: '/images/journal-3.png',
     category: 'Craft',
-    title: 'How we engineer weather-ready fabric that breathes',
+    title: 'Inside the garment-dyeing that gives our tees their fade',
     date: 'Aug 2025',
-    alt: 'Minimalist campsite tent beside an alpine lake',
+    alt: 'Skate Freedom graphic tee lifestyle shot',
   },
 ]
 
@@ -36,7 +36,7 @@ export function Journal() {
     >
       <div className="mb-12 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
         <Reveal>
-          <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-primary">
+          <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-brand">
             05 — Adventure Journal
           </p>
           <h2 className="max-w-2xl text-balance text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
