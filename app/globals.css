@@ -28,6 +28,7 @@
   --color-stone: var(--stone);
   --color-sand: var(--sand);
   --color-earth: var(--earth);
+  --color-brand: var(--brand);
   --color-offwhite: var(--offwhite);
 
   --font-sans: var(--font-sans);
@@ -78,6 +79,8 @@
   --sand: #d2c2a1; /* Sandstone */
   --earth: #6e5038; /* Earth Brown */
   --offwhite: #f5f3ee;
+  /* Signature burnt-orange accent from the ORS logo (reference site) */
+  --brand: #c15a2b;
 
   --radius: 0.25rem;
 }

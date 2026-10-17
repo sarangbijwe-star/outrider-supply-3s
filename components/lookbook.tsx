@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { Expand, X } from 'lucide-react'
@@ -9,26 +10,26 @@ import { Reveal } from '@/components/reveal'
 const SHOTS = [
   {
     src: '/images/lookbook-1.png',
-    alt: 'Model in premium streetwear walking through a foggy pine forest',
-    label: 'The Forest Edit',
+    alt: 'Model in a Peaks graphic tee beside an off-road expedition truck',
+    label: 'The Peaks Edit',
     className: 'md:col-span-5 md:row-span-2 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-2.png',
-    alt: 'Two models against a raw concrete urban wall',
-    label: 'Concrete & Canvas',
+    alt: 'Coastal road trip with OutRider Supply graphic tees',
+    label: 'Coastal Road Trip',
     className: 'md:col-span-7 aspect-[16/10]',
   },
   {
     src: '/images/lookbook-4.png',
-    alt: 'Detail crop of technical outerwear with utility straps',
-    label: 'Utility in Focus',
+    alt: 'Roam More back-print tee worn on the road',
+    label: 'Roam More',
     className: 'md:col-span-3 aspect-[3/4]',
   },
   {
     src: '/images/lookbook-3.png',
-    alt: 'Model seated on rocky mountain terrain',
-    label: 'High Country',
+    alt: 'Wilderness back-print tee against the treeline',
+    label: 'Into the Wilderness',
     className: 'md:col-span-4 aspect-[3/4]',
   },
 ]
@@ -44,18 +45,27 @@ export function Lookbook() {
       <div className="mx-auto max-w-[1600px] px-5 py-24 md:px-10 md:py-32">
         <div className="mb-12 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
           <Reveal>
-            <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-primary">
-              04 — AW Editorial
+            <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-brand">
+              04 — Field Editorial
             </p>
             <h2 className="max-w-2xl text-balance text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
               The Lookbook
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              A visual field guide to the season. Shot on location between the
-              treeline and the terminal.
-            </p>
+            <div className="max-w-xs">
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                A visual field guide to the season. Three fits, shot on location
+                between the treeline and the open road.
+              </p>
+              <div className="mt-4 flex gap-5 font-mono text-[10px] uppercase tracking-[0.25em]">
+                {['trail', 'camp', 'ridge'].map((h) => (
+                  <Link key={h} href={`/collections/${h}`} className="text-foreground transition-colors hover:text-sand">
+                    {h}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </Reveal>
         </div>
 

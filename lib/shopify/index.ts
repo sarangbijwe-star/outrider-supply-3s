@@ -12,6 +12,7 @@ import {
   CART_LINES_REMOVE,
   CART_LINES_UPDATE,
   CART_QUERY,
+  CUSTOMER_CREATE,
   COLLECTION_PRODUCTS_QUERY,
   COLLECTION_QUERY,
   COLLECTIONS_QUERY,
@@ -20,6 +21,7 @@ import {
   PRODUCTS_QUERY,
   RECOMMENDATIONS_QUERY,
 } from './queries'
+import { randomBytes } from 'node:crypto'
 import {
   MOCK_COLLECTIONS,
   MOCK_POLICIES,
@@ -329,4 +331,31 @@ export async function updateDiscountCodes(cartId: string, codes: string[], buyer
     buyerIp,
   })
   return unwrapCart(data.cartDiscountCodesUpdate)
+}
+
+// ---------- Newsletter ----------
+
+/**
+ * Adds an email to Shopify Admin → Customers with email-marketing consent, so
+ * you can mail subscribers with Shopify Email (or any app that syncs customers).
+ * The Storefront API requires a password, so a random one is generated; the
+ * subscriber never uses it.
+ */
+export async function subscribeToNewsletter(email: string, buyerIp?: string | null) {
+  if (!isShopifyConnected) throw new Error('NOT_CONNECTED')
+  const data = await shopifyFetch<{
+    customerCreate: { customerUserErrors: { code: string; message: string }[] }
+  }>({
+    query: CUSTOMER_CREATE,
+    variables: {
+      input: { email, acceptsMarketing: true, password: randomBytes(24).toString('base64url') },
+    },
+    cache: 'no-store',
+    buyerIp,
+  })
+  const errors = data.customerCreate.customerUserErrors
+  // Already a customer: treat as success rather than revealing the account exists.
+  if (errors.length && !errors.every((e) => e.code === 'TAKEN' || e.code === 'CUSTOMER_DISABLED')) {
+    throw new Error(errors.map((e) => e.message).join('; '))
+  }
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { OutriderLogo } from '@/components/ors-logo'
 import { FOOTER_COLUMNS, SITE } from '@/lib/site'
 
 export function SiteFooter() {
@@ -8,9 +9,8 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-10 md:grid-cols-6 md:gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-3">
-            <Link href="/" className="font-mono text-lg font-bold uppercase tracking-[0.25em]">
-              Outrider<span className="text-primary">.</span>
-              <span className="text-muted-foreground"> Supply</span>
+            <Link href="/" aria-label={`${SITE.name} home`}>
+              <OutriderLogo />
             </Link>
             <p className="mt-6 max-w-sm text-pretty text-sm leading-relaxed text-muted-foreground">
               Premium American outdoor-inspired menswear — built for the space between the city and the wild.
@@ -40,9 +40,15 @@ export function SiteFooter() {
               <ul className="space-y-3">
                 {col.links.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-foreground/80 transition-colors hover:text-sand">
-                      {link.label}
-                    </Link>
+                    {link.href.startsWith('http') ? (
+                      <a href={link.href} target="_blank" rel="noreferrer" className="text-sm text-foreground/80 transition-colors hover:text-sand">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link href={link.href} className="text-sm text-foreground/80 transition-colors hover:text-sand">
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -71,8 +77,8 @@ export function SiteFooter() {
             <Link href="/terms" className="transition-colors hover:text-foreground">
               Terms
             </Link>
-            <Link href="/contact" className="transition-colors hover:text-foreground">
-              Contact
+            <Link href="/shipping-returns" className="transition-colors hover:text-foreground">
+              Refunds
             </Link>
           </div>
         </div>

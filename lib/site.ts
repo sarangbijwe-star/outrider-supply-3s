@@ -21,7 +21,8 @@ export const SITE = {
 } as const
 
 export const NAV_LINKS = [
-  { label: 'Shop All', href: '/shop' },
+  { label: 'Home', href: '/' },
+  { label: 'Shop', href: '/shop' },
   { label: 'Trail', href: '/collections/trail' },
   { label: 'Camp', href: '/collections/camp' },
   { label: 'Ridge', href: '/collections/ridge' },
@@ -39,10 +40,11 @@ export const FOOTER_COLUMNS = [
     ],
   },
   {
-    title: 'Company',
+    title: 'About',
     links: [
       { label: 'Our Story', href: '/our-story' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Contact Us', href: '/contact' },
+      { label: 'Instagram', href: SITE.instagram },
     ],
   },
   {

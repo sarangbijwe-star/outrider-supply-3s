@@ -76,6 +76,8 @@ flowchart LR
 | Fit descriptions & GSM | `lib/collections.ts` |
 | Size chart measurements | `lib/size-guide.ts` |
 | FAQ answers | `app/faq/page.tsx` |
+| Homepage photos | `public/images/` (same file names) — or set a collection image in Shopify to replace a collection card |
+| Homepage "New" badge | Add the tag `new` to a product in Shopify |
 
 ---
 
@@ -127,7 +129,7 @@ npx pnpm@9 dev
 5. **Headless channel (gives the site access):**
    - Shopify App Store → install **Headless** (by Shopify, free).
    - Sales channels → Headless → **Create storefront** → name it "Outrider website".
-   - Open **Storefront API** → **Manage permissions** → make sure product, collection, inventory/stock, cart/checkout and policy access are enabled → Save.
+   - Open **Storefront API** → **Manage permissions** → make sure product, collection, inventory/stock, cart/checkout, policy and **customer write** (used by the newsletter) access are enabled → Save.
    - Copy the **Private access token**. You'll paste it into Vercel in Phase 3. **Never put it in code, GitHub, email or chat.**
    - Back in **Products**, select all → "Include in sales channels" → **Headless**.
 6. **Policies:** Settings → Policies → use Shopify's templates to create Privacy, Terms, Shipping and Refund policies. Adjust them to how you work. They appear on the site automatically.
@@ -253,8 +255,8 @@ Use Shopify's **test mode** first: Settings → Payments → Shopify Payments �
 - [ ] `lib/site.ts`: real support email, Instagram/TikTok links, free-shipping threshold, return window
 - [ ] `app/faq/page.tsx` and `app/shipping-returns/page.tsx`: confirm processing times, care instructions, return terms
 - [ ] `app/our-story/page.tsx`: personalize the founder story
-- [ ] Homepage **Newsletter** form: it currently **does not save emails**. Connect it to an email tool (e.g. Shopify Email or Klaviyo's free tier) before launch, or remove it from `app/page.tsx`
-- [ ] Homepage **Journal** and **Lookbook**: these use the original placeholder images and stories. Replace them with your own, or remove them from `app/page.tsx`
+- [ ] Homepage **Newsletter**: signups are saved to Shopify Admin → Customers with "Email subscribed" consent (you can email them with Shopify Email). In the Headless storefront's Storefront API permissions, enable **customer write** access, then sign up with a test email and confirm it appears in Customers
+- [ ] Homepage **Adventure Journal**: there are no articles yet, so the three cards link to Our Story, the Fit Guide and New Arrivals. Replace them in `components/journal.tsx` when you publish real stories
 - [ ] Replace demo images in `public/images/` with final photography
 
 **Shopify**

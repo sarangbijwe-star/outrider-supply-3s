@@ -16,7 +16,7 @@ export default function OurStoryPage() {
   return (
     <main>
       <section className="relative h-[85svh] w-full overflow-hidden">
-        <Image src="/images/lookbook-1.png" alt="Walking through a misty pine forest" fill priority sizes="100vw" className="object-cover" />
+        <Image src="/images/lookbook-1.png" alt="Model in a Peaks graphic tee beside an off-road expedition truck" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background" />
         <div className="relative z-10 mx-auto flex h-full max-w-[1600px] flex-col justify-end px-5 pb-16 md:px-10 md:pb-24">
           <p className="mb-6 font-mono text-xs uppercase tracking-[0.35em] text-sand">Our Story</p>

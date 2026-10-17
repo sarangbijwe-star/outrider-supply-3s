@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { Menu, Search, ShoppingBag, X } from 'lucide-react'
 import { useCart } from '@/components/cart/cart-context'
+import { OutriderLogo } from '@/components/ors-logo'
 import { NAV_LINKS, SITE } from '@/lib/site'
 
 export function SiteHeader() {
@@ -53,17 +54,12 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 md:h-20 md:px-10">
         {/* Logo */}
-        <Link
-          href="/"
-          aria-label={`${SITE.name} home`}
-          className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-foreground md:text-base"
-        >
-          Outrider<span className="text-primary">.</span>
-          <span className="hidden text-muted-foreground sm:inline"> Supply</span>
+        <Link href="/" aria-label={`${SITE.name} home`}>
+          <OutriderLogo />
         </Link>
 
         {/* Center nav */}
-        <nav className="hidden items-center gap-9 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-8 lg:flex xl:gap-9" aria-label="Main">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href
             return (
@@ -101,7 +97,7 @@ export function SiteHeader() {
           >
             <ShoppingBag className="h-[18px] w-[18px]" strokeWidth={1.5} />
             {count > 0 && (
-              <span className="absolute -right-2 -top-2 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[9px] font-semibold text-primary-foreground">
+              <span className="absolute -right-2 -top-2 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[9px] font-semibold text-background">
                 {count}
               </span>
             )}
@@ -156,9 +152,7 @@ export function SiteHeader() {
             className="fixed inset-0 z-50 flex flex-col bg-background lg:hidden"
           >
             <div className="flex h-16 items-center justify-between px-5">
-              <span className="font-mono text-sm font-bold uppercase tracking-[0.25em]">
-                Outrider<span className="text-primary">.</span>
-              </span>
+              <OutriderLogo compact />
               <button aria-label="Close menu" onClick={() => setMenuOpen(false)}>
                 <X className="h-6 w-6" strokeWidth={1.5} />
               </button>

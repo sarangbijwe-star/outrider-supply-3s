@@ -92,7 +92,8 @@ function buildProduct(seed: Seed, index: number): Product {
     images: [image],
     variants,
     seo: { title: null, description: null },
-    tags: [seed.collection],
+    // The two newest demo products are tagged "new" to show the homepage badge.
+    tags: index >= SEEDS.length - 2 ? [seed.collection, 'new'] : [seed.collection],
     collections: [{ handle: fit.handle, title: fit.name }],
     updatedAt: new Date(2026, 9, 1 + index).toISOString(),
   }

@@ -229,3 +229,14 @@ export const CART_DISCOUNT_CODES_UPDATE = /* GraphQL */ `
   }
   ${CART}
 `
+
+// ---------- Newsletter ----------
+
+export const CUSTOMER_CREATE = /* GraphQL */ `
+  mutation customerCreate($input: CustomerCreateInput!) {
+    customerCreate(input: $input) {
+      customer { id }
+      customerUserErrors { code message }
+    }
+  }
+`
