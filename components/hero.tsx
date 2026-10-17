@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
 import { ArrowDown } from 'lucide-react'
@@ -43,7 +44,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 font-mono text-xs uppercase tracking-[0.35em] text-sand"
         >
-          Autumn / Winter Collection
+          Outrider Supply — The Launch Collection
         </motion.p>
 
         <h1 className="max-w-5xl text-balance text-[18vw] font-semibold leading-[0.85] tracking-tight text-foreground md:text-[13vw] lg:text-[11rem]">
@@ -72,22 +73,22 @@ export function Hero() {
           className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
         >
           <p className="max-w-md text-pretty text-base leading-relaxed text-stone md:text-lg">
-            Premium outdoor streetwear built for everyday exploration — from
-            city streets to mountain trails.
+            Premium American outdoor-inspired menswear. Heavyweight cotton tees
+            in three fits — built for city streets and mountain trails.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <a
-              href="#collections"
+            <Link
+              href="/shop"
               className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-background transition-colors hover:bg-sand"
             >
-              Shop Collection
-            </a>
-            <a
-              href="#story"
+              Shop the Collection
+            </Link>
+            <Link
+              href="/our-story"
               className="inline-flex items-center gap-3 border border-border px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-foreground transition-colors hover:border-foreground"
             >
               Our Story
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

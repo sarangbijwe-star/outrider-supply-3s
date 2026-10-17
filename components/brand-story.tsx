@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
 import { Reveal } from '@/components/reveal'
@@ -44,40 +45,40 @@ export function BrandStory() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-              OutRider Supply began with a simple belief — that the clothing you
-              wear should never hold you back. We blend technical utility with
-              considered design, creating pieces that move effortlessly from
-              morning commutes to mountain trails.
+              Outrider Supply began with a simple belief — that the clothing you
+              wear should never hold you back. We design heavyweight essentials
+              with an outdoor spirit, made to move from morning commutes to
+              mountain trails.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-border pt-10 md:max-w-md">
               <div>
                 <p className="text-4xl font-semibold tracking-tight md:text-5xl">
-                  100%
+                  3
                 </p>
                 <p className="mt-2 text-xs uppercase tracking-[0.15em] text-muted-foreground">
-                  Responsibly sourced materials
+                  Fits — Trail, Camp, Ridge
                 </p>
               </div>
               <div>
                 <p className="text-4xl font-semibold tracking-tight md:text-5xl">
-                  12yr
+                  240
                 </p>
                 <p className="mt-2 text-xs uppercase tracking-[0.15em] text-muted-foreground">
-                  Of field-tested craft
+                  GSM heavyweight cotton
                 </p>
               </div>
             </div>
           </Reveal>
           <Reveal delay={0.2}>
-            <a
-              href="#collections"
+            <Link
+              href="/our-story"
               className="mt-12 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-foreground"
             >
               <span className="h-px w-10 bg-sand" />
-              Discover the making
-            </a>
+              Read our story
+            </Link>
           </Reveal>
         </div>
       </div>

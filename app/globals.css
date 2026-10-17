@@ -27,6 +27,8 @@
   --color-olive: var(--olive);
   --color-stone: var(--stone);
   --color-sand: var(--sand);
+  --color-earth: var(--earth);
+  --color-offwhite: var(--offwhite);
 
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
@@ -41,39 +43,41 @@
 :root {
   color-scheme: dark;
 
-  /* Core dark luxury palette */
-  --background: #111111;
-  --foreground: #f9f9f7;
+  /* OUTRIDER SUPPLY palette — Charcoal Black, Moss, Sandstone, Earth Brown, Off-white */
+  --background: #121211; /* Charcoal Black */
+  --foreground: #f5f3ee; /* Off-white */
 
-  --card: #1a1a19;
-  --card-foreground: #f9f9f7;
+  --card: #1b1b19;
+  --card-foreground: #f5f3ee;
 
-  --popover: #1a1a19;
-  --popover-foreground: #f9f9f7;
+  --popover: #1b1b19;
+  --popover-foreground: #f5f3ee;
 
-  /* Olive brand accent */
-  --primary: #6b8241;
-  --primary-foreground: #f9f9f7;
+  /* Moss / Outdoor Olive brand accent */
+  --primary: #7a8060;
+  --primary-foreground: #f5f3ee;
 
-  --secondary: #2b2b2b;
-  --secondary-foreground: #f9f9f7;
+  --secondary: #2a2a27;
+  --secondary-foreground: #f5f3ee;
 
-  --muted: #2b2b2b;
-  --muted-foreground: #b7b1a1;
+  --muted: #23231f;
+  --muted-foreground: #b5ae9e;
 
-  --accent: #d7c8aa;
-  --accent-foreground: #111111;
+  --accent: #d2c2a1;
+  --accent-foreground: #121211;
 
-  --destructive: #b4432f;
+  --destructive: #d0664f;
 
-  --border: rgba(249, 249, 247, 0.12);
-  --input: rgba(249, 249, 247, 0.16);
-  --ring: #6b8241;
+  --border: rgba(245, 243, 238, 0.12);
+  --input: rgba(245, 243, 238, 0.16);
+  --ring: #7a8060;
 
   /* Named brand tokens */
-  --olive: #556b2f;
-  --stone: #b7b1a1;
-  --sand: #d7c8aa;
+  --olive: #7a8060; /* Moss */
+  --stone: #b5ae9e;
+  --sand: #d2c2a1; /* Sandstone */
+  --earth: #6e5038; /* Earth Brown */
+  --offwhite: #f5f3ee;
 
   --radius: 0.25rem;
 }

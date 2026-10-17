@@ -1,4 +1,3 @@
-import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
 import { FeaturedCollections } from '@/components/featured-collections'
 import { NewArrivals } from '@/components/new-arrivals'
@@ -7,23 +6,24 @@ import { Lookbook } from '@/components/lookbook'
 import { Journal } from '@/components/journal'
 import { InstagramFeed } from '@/components/instagram-feed'
 import { Newsletter } from '@/components/newsletter'
-import { SiteFooter } from '@/components/site-footer'
+import { getCollections, getProducts } from '@/lib/shopify'
 
-export default function Page() {
+export default async function Page() {
+  const [products, collections] = await Promise.all([
+    getProducts({ sort: 'newest', limit: 8 }),
+    getCollections(),
+  ])
+
   return (
-    <>
-      <SiteHeader />
-      <main>
-        <Hero />
-        <FeaturedCollections />
-        <NewArrivals />
-        <BrandStory />
-        <Lookbook />
-        <Journal />
-        <InstagramFeed />
-        <Newsletter />
-      </main>
-      <SiteFooter />
-    </>
+    <main>
+      <Hero />
+      <FeaturedCollections collections={collections} />
+      <NewArrivals products={products} />
+      <BrandStory />
+      <Lookbook />
+      <Journal />
+      <InstagramFeed />
+      <Newsletter />
+    </main>
   )
 }

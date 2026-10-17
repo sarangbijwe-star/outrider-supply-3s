@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { AtSign, Camera } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
+import { SITE } from '@/lib/site'
 
 const FEED = [
   { src: '/images/ig-1.png', alt: 'Outdoor streetwear detail on city street', tall: false },
@@ -25,7 +26,9 @@ export function InstagramFeed() {
             @outridersupply
           </h2>
           <a
-            href="#"
+            href={SITE.instagram}
+            target="_blank"
+            rel="noreferrer"
             className="mt-2 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
           >
             <AtSign className="h-4 w-4" strokeWidth={1.5} />

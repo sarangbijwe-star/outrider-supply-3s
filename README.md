@@ -1,33 +1,25 @@
-# outrider-supply-3s
+# OUTRIDER SUPPLY — Storefront
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Premium outdoor-inspired menswear. Custom Next.js storefront on Vercel, connected to Shopify (headless) for products, cart and secure checkout.
 
-## Built with v0
+**Start here → [SETUP-GUIDE.md](SETUP-GUIDE.md)**: the recommended approach, costs, Shopify setup, domain/DNS, testing and launch checklists.
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
-
-[Continue working on v0 →](https://v0.app/chat/projects/prj_SgmXpFhNRx2QKM4H33ALbD0XN53O)
-
-## Getting Started
-
-First, run the development server:
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npx pnpm@9 install
+npx pnpm@9 dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Without Shopify credentials, the site runs in **demo mode** with sample products. Copy `.env.example` to `.env.local` and fill it in to use your real store.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where things live
 
-## Learn More
-
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+| Folder / file | What it is |
+|---|---|
+| `lib/shopify/` | Shopify Storefront API client (server-only), queries, demo catalog |
+| `app/actions/cart.ts` | Cart server actions (cart ID kept in an httpOnly cookie) |
+| `components/cart/` | Bag drawer, bag page, checkout button |
+| `components/product/` | Product cards, product page, sorting |
+| `lib/site.ts`, `lib/collections.ts`, `lib/size-guide.ts` | Brand settings, TRAIL/CAMP/RIDGE details, size charts |
+| `app/api/revalidate` | Shopify webhook → instant product updates |

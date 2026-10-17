@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { ArrowUpRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
 const ARTICLES = [
@@ -43,15 +42,6 @@ export function Journal() {
             Stories from the Field
           </h2>
         </Reveal>
-        <Reveal delay={0.1}>
-          <a
-            href="#"
-            className="group inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
-          >
-            All Journals
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
-        </Reveal>
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
@@ -60,7 +50,7 @@ export function Journal() {
             key={a.title}
             as="figure"
             delay={i * 0.08}
-            className="group cursor-pointer"
+            className="group"
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
